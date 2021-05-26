@@ -1,0 +1,106 @@
+.menu {
+  .menu-color {
+    width: 100%;
+    background-color: cl(lightgray);
+    text-align: center;
+    padding-top: 3rem;
+    .cmn-title {
+      margin-bottom: 4.5rem;
+    }
+    .menu-container {
+      display: block;
+      max-width: 40rem;
+      width: calc(100% - 4rem);
+      margin: 0 auto;
+      padding: 0 0 2rem 0;
+      @include overTab {
+        display: flex;
+        justify-content: space-between;
+        width: 84%;
+        max-width: none;
+        margin: 0 auto;
+        padding: 5rem 0 2rem 0;
+        border-top: 1px solid cl(whitegray);
+      }
+      .solo-food {
+        @include overTab {
+          width: calc(50% - 7rem/2);
+        }
+        p {
+          font-size: 1.8rem;
+          margin-bottom: 4rem;
+          text-align: left;
+          color: cl(gray);
+        }
+        .solo-food-list {
+          .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            dt,dd {
+              font-size: 2rem;
+            }
+            dt {
+              text-align: left;
+              span {
+                font-size: 1.4rem;
+              }
+              .desc {
+                color: cl(gray);
+              }
+            }
+          }
+        }
+      }
+      .sweets {
+        @include overTab {
+          width: calc(50% - 7rem/2);
+        }
+        p {
+          font-size: 1.8rem;
+          text-align: left;
+          color: cl(gray);
+          margin: 4rem 0 3rem 0 ;
+          @include overTab {
+            margin: 0 0 3rem 0;
+          }
+        }
+        .sweets-list {
+          .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            dt,dd {
+              font-size: 2rem;
+            }
+            dt {
+              text-align: left;
+              span {
+                font-size: 1.4rem;
+              }
+              .desc {
+                color: cl(gray);
+              }
+            }
+          }
+        }
+        .ice-list {
+          .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            dt,dd {
+              font-size: 2rem;
+            }
+            dt {
+              text-align: left;
+              span {
+                font-size: 1.4rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

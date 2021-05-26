@@ -1,0 +1,22 @@
+.inner {
+  width: calc(100% - 4rem);
+  margin: 0 auto;
+  @include overTab {
+    max-width: 964px;
+  }
+}
+
+.cmn-title {
+  font-size: 3.2rem;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  span {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
+.cmn-texts {
+  font-size: 1.6rem;
+  margin-top: 4rem;
+}

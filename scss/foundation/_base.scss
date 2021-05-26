@@ -1,0 +1,27 @@
+// COLORS
+// @inlcude cl(black);
+//--------------------------------------------------
+
+$colors: (
+  white: #fff,
+  black: #000,
+	gray: #777,
+	lightgray: #FAFAFA,
+	whitegray: #e1e1e1,
+);
+
+@function cl($key) {
+	@return map-get($colors, $key);
+}
+
+@mixin overTab {
+	@media print,screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+// @mixin tablet-ver {
+// 	@media print,screen and (min-width: 768px) {
+// 		@content;
+// 	}
+// }
